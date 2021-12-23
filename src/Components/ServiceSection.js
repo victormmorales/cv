@@ -1,11 +1,11 @@
 import React from 'react'
 
-function ResumePage() {
+function ServiceSection() {
     return (
         <div>
-            <h1>Resume</h1>
+            
         </div>
     )
 }
 
-export default ResumePage
+export default ServiceSection
