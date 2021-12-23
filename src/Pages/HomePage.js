@@ -1,7 +1,7 @@
 import React from 'react'
 import Particle from '../Components/Particles';
 import styled from 'styled-components';
-// import Typical from 'react-typical'
+import Typical from 'react-typical';
 import { LinkedIn, GitHub, Instagram } from '@material-ui/icons';
 
 function HomePage() {
@@ -11,13 +11,13 @@ function HomePage() {
                 <Particle />
             </div>
             <div className='typography'>
-                <h1>Hi I'm <span>Víctor</span></h1>
-                {/* <h2>
+                <h1>Hola, soy <span>Víctor</span></h1>
+                <h2>
                     <Typical
                         loop={Infinity}
                         steps={["Full Stack Developer", 1000, "MERN Stack Dev", 1000,]}
                     />
-                </h2> */}
+                </h2>
                 <p>Soy un apasionado por el desarrollo de software que busca seguir creciendo dentro del sector IT.<br/>
                    
                 Mi deseo es pertenecer a una empresa que me guíe en mi crecimiento profesional, a la que pueda aportar
@@ -80,9 +80,24 @@ const HomePageStyled = styled.header`
                     font-size: 2rem;
                     margin: 0 0.5rem;
                     transition: all 0.4s ease-in-out;
-                    &:hover{
+                    /* &:hover{
                         color: var(--primary-color);
-                    }
+                    } */
+                }
+            }
+            .i-linkedin{
+                &:hover{
+                    color: #0032ec;
+                }
+            }
+            .i-github{
+                &:hover{
+                    color: #b1fffb;
+                }
+            }
+            .i-instagram{
+                &:hover{
+                    color: #dc3663;
                 }
             }
         }

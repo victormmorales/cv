@@ -17,7 +17,6 @@ function Navigation() {
             <ul className="nav-items">
                 <li className="nav-item">
                     <Link to="/" exact="true" className={location.pathname ===  '/' ? 'active' : null }>Home</Link>
-                    {/* LOCATION PARA CLASS ACTIVE */}
                 </li>
                 <li className="nav-item">
                     <Link to="/about" exact="true" className={location.pathname ===  '/about' ? 'active' : null }>About</Link>

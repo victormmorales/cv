@@ -11,6 +11,7 @@ function Sidebar() {
 }
 
 const SidebarStyled = styled.div`
+    z-index: 100;
     width: 16.3rem;
     position: fixed;
     height: 100vh;
