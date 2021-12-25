@@ -15,6 +15,10 @@ function SkillCard({ image, title }) {
 const SkillCardStyled = styled.div`
     background-color: var(--background-dark-grey);
     margin: 1rem;
+    &:hover{
+        box-shadow: 0px 0px 23px 4px rgba(114, 114, 114, 0.541);
+        transform: scale(1.02);
+    }
     .container{
         width: 100%;
         padding: 1.2rem;

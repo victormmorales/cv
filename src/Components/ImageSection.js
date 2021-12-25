@@ -14,7 +14,7 @@ function ImageSection() {
         <img src={resume} alt="" />
       </div>
       <div className="right-content">
-        <h4>Soy <span>Víctor Ruiz</span></h4>
+        <h4>Para conocerme un poco <span>más...</span></h4>
 
         <p className="paragraph">
           Soy un apasionado por el desarrollo de software que busca seguir
@@ -69,10 +69,10 @@ const ImageSectionStyled = styled.div`
   .right-content {
     width: 100%;
     h4 {
-      font-size: 2rem;
+      font-size: 1.8rem;
       color: var(--white-color);
       span {
-        font-size: 2rem;
+        font-size: 1.8rem;
       }
     }
     .paragraph {

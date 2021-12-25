@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { InnerLayout} from '../styles/Layouts';
 import Title from './Title';
 import SkillCard from './SkillCard';
+import { SkillData } from '../data/DataSkills';
 // Imgs:
 import react from '../img/logos/react.png';
 import javascript from '../img/logos/javascript.png';
@@ -15,41 +16,14 @@ function SkillsSection() {
             <SkillsSectionStyled>
                 <Title title="Skills" span="Skills" />
                 <div className='services'>
-                    {/* Fila 1 */}
-                    <SkillCard
-                        image={react}
-                        title="ReactJS"
+                    {SkillData.map(({ image, text }, i) => (
+                        <SkillCard
+                        image={image}
+                        title={text}
+                        key={i}
                     />
-                    <SkillCard
-                        image={javascript}
-                        title="JavaScript"
-                    />
-                    <SkillCard
-                        image={html}
-                        title="HTML5"
-                    />
-                    <SkillCard
-                        image={css}
-                        title="CSS"
-                    />
-                    {/* Fila 2 */}
-                    <SkillCard
-                        image={react}
-                        title="ReactJS"
-                    />
-                    <SkillCard
-                        image={javascript}
-                        title="JavaScript"
-                    />
-                    <SkillCard
-                        image={html}
-                        title="HTML5"
-                    />
-                    <SkillCard
-                        image={css}
-                        title="CSS"
-                    />
-                </div>
+                    ))}
+                </div> 
             </SkillsSectionStyled>
         </InnerLayout>
     )
