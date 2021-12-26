@@ -14,6 +14,7 @@ import query from '../img/logos/query.png';
 import adobe from '../img/logos/adobe.png';
 import photoshop from '../img/logos/photoshop.png';
 import premiere from '../img/logos/premiere.jpg';
+import lightroom from '../img/logos/lightroom.png';
 
 export const SkillData = [
     {
@@ -75,6 +76,11 @@ export const SkillData = [
     {
         image: premiere,
         text: 'Premiere'
+    }
+    ,
+    {
+        image: lightroom,
+        text: 'Lightroom'
     }
   ];
   

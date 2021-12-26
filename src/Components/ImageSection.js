@@ -17,31 +17,37 @@ function ImageSection() {
         <h4>Para conocerme un poco <span>más...</span></h4>
 
         <p className="paragraph">
-          Soy un apasionado por el desarrollo de software que busca seguir
-          creciendo dentro del sector IT.
-          <br />
-          <br />
-          Mi deseo es pertenecer a una empresa que me guíe en mi crecimiento
-          profesional, a la que pueda aportar toda mi dedicación así como mis
-          conocimientos y habilidades.
+        ¡Hola! soy <span>Víctor</span>👋🏽 Desarrollador Web Full Stack.
+        <br/>
+        Me apasiona el mundo del diseño y experiencia de usuario 👨🏻‍💻.
+        <br/>
+        Siempre que desarrollo un proyecto trato de ofrecer la mejor experiencia de usuario.
+        <br/>
+        Procuro que todos mis desarrollos sean únicos y que aporten algo distinto.
+        ¡Siempre Responsive! 📲 😏
+        <br/>
+        Desarrollo con Buenas Prácticas: <span>Clean Code, Pair Programming, TDD</span>
+        <br/>
+        Mis herramientas ⚙️ <br/>
+        - <span>Visual Studio Code, Git, GitHub, Notion</span>
         </p>
 
         <div className="about-info">
           <div className="info-title">
-            <p>Nombre Completo</p>
+            <p>Nombre</p>
+            <p>Apellidos</p>
             <p>Edad</p>
             <p>Nacionalidad</p>
             <p>Ciudad</p>
             <p>Idioma</p>
-            <p>Servicios</p>
           </div>
           <div className="info">
-            <p>: Víctor Manuel Morales Ruiz</p>
+            <p>: Víctor Manuel</p>
+            <p>: Morales Ruiz</p>
             <p>: {year - 1992}</p>
             <p>: Español</p>
             <p>: Madrid</p>
-            <p>: Español, Inglés</p>
-            <p>: Full Stack Developer</p>
+            <p>: Español</p>
           </div>
         </div>
         <PrimaryButton title="Descargar CV" />

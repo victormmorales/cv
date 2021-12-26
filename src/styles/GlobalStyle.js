@@ -19,6 +19,7 @@ const GlobalStyle = createGlobalStyle`
     --scrollbar-bg-color: #383838;
     --scrollbar-thump-color: #6b6b6b;
     --scrollbar-track-color: #383838;
+    --box-shadow: rgba(114, 114, 114, 0.7);
 }
 .light-theme{
     --primary-color: #007bff;

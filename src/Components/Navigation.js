@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import { Link, useLocation } from "react-router-dom";
+import { LinkedIn, GitHub, Instagram } from '@material-ui/icons';
 import avatar from '../img/hero.jpg';
 
 function Navigation() {
@@ -35,9 +36,18 @@ function Navigation() {
                 </li>
             </ul>
             <footer className="footer">
-                <div className='img-footer'>
-                    <img src='https://res.cloudinary.com/dhd9jgrw3/image/upload/v1610448149/Logos%20VR/LOGO_VR_Blanco_kzklcb.png' alt="img-footer" />
+                <div className='icons'>
+                    <div className='icon i-linkedin'>
+                        <a href='https://www.linkedin.com/in/victormmorales/' target="_blank" rel="noreferrer"><LinkedIn /></a>
+                    </div>
+                    <div className='icon i-github'>
+                        <a href='https://github.com/militroncho7' target="_blank" rel="noreferrer"><GitHub /></a>
+                    </div>
+                    <div className='icon i-instagram'>
+                        <a href='https://www.instagram.com/militroncho7/' target="_blank" rel="noreferrer"><Instagram /></a>
+                    </div>
                 </div>
+                
                 <p>{year}©</p>
             </footer>
         </NavigationStyled>
@@ -108,20 +118,24 @@ const NavigationStyled = styled.nav`
         border-top: 1px solid var(--border-color);
         width: 80%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        .icons{
+            margin: 1rem 0 0.5rem;
+            display: flex;
+            svg{
+                margin: 0 0.5rem;
+                &:hover{
+                    color: white;
+                }
+            }
+        }
         p{
-            padding: 1.3rem 0;
             font-size: 0.8rem;
             display: block;
             text-align: center;
-        }
-        .img-footer{
-            width: 10%;
-            margin-right: 1rem;
-            img{
-                width: 100%;
-            }
+            margin-bottom: 0.5rem;
         }
     }
 `;
