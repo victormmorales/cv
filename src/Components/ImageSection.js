@@ -51,6 +51,7 @@ function ImageSection() {
             <p>: Español</p>
           </div>
         </div>
+        <p>Meter un texto sobre mis hobbies ;)</p>
         <PrimaryButton title="Descargar CV" />
       </div>
     </ImageSectionStyled>
