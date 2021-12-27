@@ -14,7 +14,6 @@ function SkillsSection() {
     return (
         <InnerLayout>
             <SkillsSectionStyled>
-                <Title title="Skills" span="Skills" />
                 <div className='services'>
                     {SkillData.map(({ image, text }, i) => (
                         <SkillCard

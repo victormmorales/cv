@@ -24,6 +24,7 @@ function ImageSection() {
         Siempre que desarrollo un proyecto trato de ofrecer la mejor experiencia de usuario.
         <br/>
         Procuro que todos mis desarrollos sean únicos y que aporten algo distinto.
+        <br/>
         ¡Siempre Responsive! 📲 😏
         <br/>
         Desarrollo con Buenas Prácticas: <span>Clean Code, Pair Programming, TDD</span>
@@ -66,7 +67,7 @@ const ImageSectionStyled = styled.div`
     }
   }
   .left-content {
-    width: 100%;
+    width: 60%;
     img {
       width: 95%;
       object-fit: cover;

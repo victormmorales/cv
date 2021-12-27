@@ -4,6 +4,7 @@ import Sidebar from "./Components/Sidebar";
 //Components
 import HomePage from "./Pages/HomePage";
 import AboutPage from "./Pages/AboutPage";
+import SkillsPage from "./Pages/SkillsPage";
 import ResumePage from "./Pages/ResumePage";
 import PortfolioPage from "./Pages/PortfolioPage";
 import BlogsPage from "./Pages/BlogsPage";
@@ -14,19 +15,29 @@ function App() {
     <div className="App">
       <Sidebar />
       <MainContentStyled>
-        <div className="lines">
+        {/* <div className="lines">
           <div className="line-1"></div>
           <div className="line-2"></div>
           <div className="line-3"></div>
           <div className="line-4"></div>
-        </div>
+        </div> */}
 
         <Switch>
           <Route path="/" exact>
             <HomePage />
+            <AboutPage />
+            <SkillsPage />
+            <ResumePage />
+            <PortfolioPage />
+            <BlogsPage />
+            <ContactPage />
           </Route>
+
           <Route path="/about" exact>
             <AboutPage />
+          </Route>
+          <Route path="/skills" exact>
+            <SkillsPage />
           </Route>
           <Route path="/resume" exact>
             <ResumePage />

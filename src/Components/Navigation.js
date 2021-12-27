@@ -23,6 +23,9 @@ function Navigation() {
                     <Link to="/about" exact="true" className={location.pathname ===  '/about' ? 'active' : null }>About</Link>
                 </li>
                 <li className="nav-item">
+                    <Link to="/skills" exact="true" className={location.pathname ===  '/skills' ? 'active' : null }>Skills</Link>
+                </li>
+                <li className="nav-item">
                     <Link to="/resume" exact="true" className={location.pathname ===  '/resume' ? 'active' : null }>Resume</Link>
                 </li>
                 <li className="nav-item">
@@ -36,6 +39,8 @@ function Navigation() {
                 </li>
             </ul>
             <footer className="footer">
+                <p>Víctor Ruiz {year}©</p>
+
                 <div className='icons'>
                     <div className='icon i-linkedin'>
                         <a href='https://www.linkedin.com/in/victormmorales/' target="_blank" rel="noreferrer"><LinkedIn /></a>
@@ -47,8 +52,6 @@ function Navigation() {
                         <a href='https://www.instagram.com/militroncho7/' target="_blank" rel="noreferrer"><Instagram /></a>
                     </div>
                 </div>
-                
-                <p>{year}©</p>
             </footer>
         </NavigationStyled>
     )
@@ -122,7 +125,7 @@ const NavigationStyled = styled.nav`
         justify-content: center;
         align-items: center;
         .icons{
-            margin: 1rem 0 0.5rem;
+            margin: 0.5rem 0;
             display: flex;
             svg{
                 margin: 0 0.5rem;
@@ -135,7 +138,7 @@ const NavigationStyled = styled.nav`
             font-size: 0.8rem;
             display: block;
             text-align: center;
-            margin-bottom: 0.5rem;
+            margin-top: 0.5rem;
         }
     }
 `;
