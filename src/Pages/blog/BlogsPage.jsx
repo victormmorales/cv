@@ -47,10 +47,12 @@ const BlogStyled = styled.div`
             img{
                 width: 100%;
                 object-fit: cover;
+                opacity: 0.7;
                 transition: all .4s ease-in-out;
                 &:hover{
+                    opacity: 1;
                     cursor: pointer;
-                    transform: rotate(3deg) scale(1.1);
+                    transform: rotate(2deg) scale(1.1);
                 }
             }
         }
