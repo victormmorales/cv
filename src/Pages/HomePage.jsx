@@ -47,6 +47,7 @@ const HomePageStyled = styled.header`
         position: absolute;
         top: 0;
         left: 0;
+        z-index: -1;
     }
     .typography {
         position: absolute;
@@ -79,10 +80,7 @@ const HomePageStyled = styled.header`
                 svg{
                     font-size: 2rem;
                     margin: 0 0.5rem;
-                    transition: all 0.4s ease-in-out;
-                    /* &:hover{
-                        color: var(--primary-color);
-                    } */
+                    transition: all 0.4s ease;
                 }
             }
             .i-linkedin{

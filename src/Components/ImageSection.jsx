@@ -5,7 +5,6 @@ import PrimaryButton from "./PrimaryButton";
 import resume from "../img/resume.jpg";
 
 function ImageSection() {
-    // Fecha:
   const year = new Date().getFullYear();
 
   return (
@@ -51,7 +50,6 @@ function ImageSection() {
             <p>: Español</p>
           </div>
         </div>
-        <p>Meter un texto sobre mis hobbies ;)</p>
         <PrimaryButton title="Descargar CV" />
       </div>
     </ImageSectionStyled>
