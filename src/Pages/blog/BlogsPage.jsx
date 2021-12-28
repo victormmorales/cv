@@ -11,15 +11,15 @@ function BlogsPage() {
             <BlogStyled>
                 <Title title="Blogs" span="Blogs" />
                 <InnerLayout className='blog'>
-                { blogs.map(({ _id, imagePrincipal, title, link }) => (
+                { blogs.map(({ _id, imagePrincipal, title }, i) => (
                     <div key={_id} className='blog-item'>
                         <Link to={`/blogs/${_id}`}>
                         <div className='image'>
-                            <img src={imagePrincipal} alt="blog-img" />
+                            <img className={i%2 === 0 ? '' : 'img-par'} src={imagePrincipal} alt="blog-img" />
                         </div>
                         </Link>
                         <div className='title'>
-                        <Link to={`/blogs/${_id}`}>{title}</Link>
+                            <Link to={`/blogs/${_id}`}>{title}</Link>
                         </div>
                     </div>
                 ))}
@@ -54,6 +54,12 @@ const BlogStyled = styled.div`
                     cursor: pointer;
                     transform: rotate(2deg) scale(1.1);
                 }
+            }
+            .img-par{
+                &:hover{
+                    opacity: 1;
+                    cursor: pointer;
+                    transform: rotate(-2deg) scale(1.1);
             }
         }
         .title{
