@@ -9,7 +9,7 @@ function EntradaPage() {
     const { id } = useParams();
 
     return (
-        blogs.map(({ _id, title, date, imagePrincipal, textPrincipal, textSecundario, imageSecundaria }) => (
+        blogs.map(({ _id, title, date, imagePrincipal, textPrincipal, textSecundario, textTerciario, imageSecundaria }) => (
             id === _id &&
             <MainLayout key={_id}>
                 <EntradaStyled>
@@ -25,6 +25,7 @@ function EntradaPage() {
                     </div>
                     <div className="textoSecundario">
                         <p>{textSecundario}</p>
+                        <p>{textTerciario}</p>
                     </div>
                     <div className="imageSecundaria">
                         <img src={imageSecundaria} alt="img-secundaria" />
@@ -57,16 +58,14 @@ const EntradaStyled = styled.div`
             }
         }
         .textoPrincipal{
-            text-align: center;
             p{
                 font-size: 1rem;
             }
         }
     }
     .textoSecundario{
-        text-align: center;
-        margin-top: 1rem;
         p{
+            margin-top: 1rem;
             font-size: 1rem;
         }
     }
