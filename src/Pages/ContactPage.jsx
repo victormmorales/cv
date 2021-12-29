@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import{ MainLayout, InnerLayout } from '../styles/Layouts';
 import Title from '../Components/Title';
 import PrimaryButton from '../Components/PrimaryButton';
-// import PhoneIcon from '@mui/icons-material/Phone';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone, faEnvelope, faMapMarkedAlt } from "@fortawesome/free-solid-svg-icons";
 // // import EmailIcon from '@mui/icons-material/Email';
 // // import Location from '@mui/icons-material/Location';
 import ContacItem from '../Components/ContacItem';
@@ -37,7 +38,9 @@ function ContactPage() {
                         </form>
                     </div>
                     <div className="right-content">
-                        {/* <ContacItem icon={PhoneIcon} title="Teléfono" contact="+34 617 688 877" /> */}
+                        <ContacItem icon={<FontAwesomeIcon icon={faPhone}/>} title="Teléfono" contact1="+34 617 688 877" />
+                        <ContacItem icon={<FontAwesomeIcon icon={faEnvelope}/>} title="Email" contact1="vm.moralesruiz@gmail.com" />
+                        <ContacItem icon={<FontAwesomeIcon icon={faMapMarkedAlt}/>} title="Ubicación" contact1="Madrid" />
                     </div>
                 </InnerLayout>
             </ContactStyled>
@@ -49,6 +52,12 @@ const ContactStyled = styled.section`
     .contact-section{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        .right-content{
+            display: flex;
+            flex-direction: column;
+            /* justify-content: space-between; */
+        }
         .contact-title {
             h4{
                 padding: 1rem 0;

@@ -17,16 +17,16 @@ function Navigation() {
             </div>
             <ul className="nav-items">
                 <li className="nav-item">
-                    <Link to="/" exact="true" className={location.pathname ===  '/' ? 'active' : null }>Home</Link>
+                    <Link to="/" exact="true" className={location.pathname ===  '/' ? 'active' : null }>Inicio</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/about" exact="true" className={location.pathname ===  '/about' ? 'active' : null }>About</Link>
+                    <Link to="/about" exact="true" className={location.pathname ===  '/about' ? 'active' : null }>Sobre mí</Link>
                 </li>
                 <li className="nav-item">
                     <Link to="/skills" exact="true" className={location.pathname ===  '/skills' ? 'active' : null }>Skills</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/resume" exact="true" className={location.pathname ===  '/resume' ? 'active' : null }>Resume</Link>
+                    <Link to="/resume" exact="true" className={location.pathname ===  '/resume' ? 'active' : null }>Curriculum</Link>
                 </li>
                 <li className="nav-item">
                     <Link to="/portfolio" exact="true" className={location.pathname ===  '/portfolio' ? 'active' : null }>Portfolio</Link>
@@ -35,7 +35,7 @@ function Navigation() {
                     <Link to="/blogs" exact="true" className={location.pathname ===  '/blogs' ? 'active' : null }>Blogs</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/contact" exact="true" className={location.pathname ===  '/contact' ? 'active' : null }>Contact</Link>
+                    <Link to="/contact" exact="true" className={location.pathname ===  '/contact' ? 'active' : null }>Contacto</Link>
                 </li>
             </ul>
             <footer className="footer">
@@ -74,6 +74,10 @@ const NavigationStyled = styled.nav`
             width: 100%;
             border-radius: 50%;
             border: 8px solid var(--border-color);
+            transition: all .3 ease-in-out; 
+            &:hover{
+                border: 8px solid var(--primary-color);
+            }
         }
     }
     .nav-items{

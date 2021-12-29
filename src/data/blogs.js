@@ -4,6 +4,7 @@ import blog1_2 from "../img/blogs/blog1-2.png";
 //Blog 2:
 import blog2_1 from "../img/blogs/blog2-1.png";
 import blog2_2 from "../img/blogs/blog2-2.png";
+//Blog3
 import blog3 from "../img/blogs/blog3.svg";
 import blog4 from "../img/blogs/blog4.svg";
 import blog5 from "../img/blogs/blog5.svg";
