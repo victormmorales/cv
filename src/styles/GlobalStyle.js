@@ -116,7 +116,7 @@ h6{
 }
 //Utilities
 .u-margin-bottom{
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
 }
 //Floting Toggler
 .light-dark-mode{

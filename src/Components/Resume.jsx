@@ -50,19 +50,21 @@ function Resume() {
                         funct5="- Construcción de itinerarios de venta"
                         funct6="- Comunicación con proveedores y responsables de los centros (a nivel nacional)"
                     />
-                    <ResumeItem
-                        year="Julio 2016 - Marzo 2020"
-                        title="Auxiliar"
-                        url="https://www.elcorteingles.es/"
-                        logo={EciLogo}
-                        tecnol="Dpto. Compras:"
-                        funct1="- Diseño de Layouts"
-                        funct2="- Responsable de implantaciones de la categoría"
-                        funct3="- Análisis de la rentabilidad del espacio y de la venta por ubicación"
-                        funct4="- Rentabilización de los surtidos"
-                        funct5="- Construcción de itinerarios de venta"
-                        funct6="- Comunicación responsables de los centros (Comunidad de Madrid)"
-                    />
+                    <div className="u-margin-bottom">
+                        <ResumeItem
+                            year="Julio 2016 - Marzo 2020"
+                            title="Auxiliar"
+                            url="https://www.elcorteingles.es/"
+                            logo={EciLogo}
+                            tecnol="Dpto. Compras:"
+                            funct1="- Diseño de Layouts"
+                            funct2="- Responsable de implantaciones de la categoría"
+                            funct3="- Análisis de la rentabilidad del espacio y de la venta por ubicación"
+                            funct4="- Rentabilización de los surtidos"
+                            funct5="- Construcción de itinerarios de venta"
+                            funct6="- Comunicación responsables de los centros (Comunidad de Madrid)"
+                        />
+                    </div>
                 </div>
 
                 {/* Formación */}
