@@ -5,7 +5,7 @@ import { GitHub } from "@material-ui/icons";
 function Menu({ menuItem }) {
   return (
     <MenuItemStyled>
-      {menuItem.map(({ id, image, link1, link2, title, text }, i) => (
+      {menuItem.map(({ id, image, link1, title, text }, i) => (
         <div className="grid-item" key={id}>
           <div className="portfolio-content">
             <div className="portfolio-image">
@@ -28,6 +28,7 @@ function Menu({ menuItem }) {
 }
 
 const MenuItemStyled = styled.div`
+  padding: 2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
