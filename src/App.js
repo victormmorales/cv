@@ -27,8 +27,8 @@ function App() {
           <Route path="/" exact>
             <HomePage />
             <AboutPage />
-            <SkillsPage />
             <ResumePage />
+            <SkillsPage />
             <PortfolioPage />
             <BlogsPage />
             <ContactPage />

@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function ResumeItem({ year, title, url,  logo, tecnol, funct1, funct2, funct3, funct4, funct5, funct6 }) {
+function ResumeFormacion({ year, title, url,  logo, tecnol }) {
     return (
-        <ResumeItemStyled>
+        <ResumeFormacionStyled>
             <div className="left-content">
                 <p>{year}</p>
             </div>
@@ -15,18 +15,12 @@ function ResumeItem({ year, title, url,  logo, tecnol, funct1, funct2, funct3, f
                 </div>
                 </a>
                 <p>{tecnol}</p>
-                <p>{funct1}</p>
-                <p>{funct2}</p>
-                <p>{funct3}</p>
-                <p>{funct4}</p>
-                <p>{funct5}</p>
-                <p>{funct6}</p>
             </div>
-        </ResumeItemStyled>
+        </ResumeFormacionStyled>
     )
 }
 
-const ResumeItemStyled = styled.div`
+const ResumeFormacionStyled = styled.div`
     display: flex;
     padding: 1rem;
     width: 70%;
@@ -57,16 +51,15 @@ const ResumeItemStyled = styled.div`
         }
     }
     .right-content{
-        padding: 2rem 2rem;
-        margin-left: 2rem;
-        /* background-color: var(--background-dark-grey); */
+        padding: 1rem 2rem;
         border-left: 2px solid var(--border-color);
+        margin-left: 2rem;
         position: relative;
         &::before{
             content: '';
             position: absolute;
             left: 0;
-            top: 15%;
+            top: 20%;
             height: 2px;
             width: 1.5rem;
             background-color: var(--border-color);
@@ -87,11 +80,11 @@ const ResumeItemStyled = styled.div`
             margin: 0.5rem 0;
             cursor: pointer;
         }
-        /* h6{
-            font-size: 1.5rem;
-            padding-bottom: .4rem;
-        } */
+        p{
+            margin-top: 2rem;
+            margin-bottom: -1rem;
+        }
     }
 `;
 
-export default ResumeItem
+export default ResumeFormacion

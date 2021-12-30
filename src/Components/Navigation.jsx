@@ -23,10 +23,10 @@ function Navigation() {
                     <Link to="/about" exact="true" className={location.pathname ===  '/about' ? 'active' : null }>Sobre mí</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/skills" exact="true" className={location.pathname ===  '/skills' ? 'active' : null }>Skills</Link>
+                    <Link to="/resume" exact="true" className={location.pathname ===  '/resume' ? 'active' : null }>Curriculum</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/resume" exact="true" className={location.pathname ===  '/resume' ? 'active' : null }>Curriculum</Link>
+                    <Link to="/skills" exact="true" className={location.pathname ===  '/skills' ? 'active' : null }>Skills</Link>
                 </li>
                 <li className="nav-item">
                     <Link to="/portfolio" exact="true" className={location.pathname ===  '/portfolio' ? 'active' : null }>Portfolio</Link>
