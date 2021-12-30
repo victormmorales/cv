@@ -33,6 +33,9 @@ const ContactItemStyled = styled.div`
         border: 1px solid var(--border-color);
         border-radius: 100%;
         margin-right: 1.5rem;
+        &:hover{
+            border: 1px solid var(--primary-color);
+        }
         svg{
             font-size: 1.5rem;
         }
