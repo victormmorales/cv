@@ -33,7 +33,6 @@ const PrimaryButtonStyled = styled.a`
         height: 0.2rem;
         background-color: var(--white-color);
         transition: all .4s ease-in-out;
-        
     }
 
 `;

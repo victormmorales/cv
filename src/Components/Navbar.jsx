@@ -4,14 +4,14 @@ import { Link, useLocation } from "react-router-dom";
 import { LinkedIn, GitHub, Instagram } from '@material-ui/icons';
 import avatar from '../img/hero.jpg';
 
-function Navigation() {
+function Navbar() {
 
     const location = useLocation();
     
     const year = new Date().getFullYear();
 
     return (
-        <NavigationStyled>
+        <NavbarStyled>
             <div className="avatar">
                 <img src={avatar} alt=""/>
             </div>
@@ -53,11 +53,11 @@ function Navigation() {
                     </div>
                 </div>
             </footer>
-        </NavigationStyled>
+        </NavbarStyled>
     )
 }
 
-const NavigationStyled = styled.nav`
+const NavbarStyled = styled.nav`
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -74,7 +74,7 @@ const NavigationStyled = styled.nav`
             width: 100%;
             border-radius: 50%;
             border: 8px solid var(--border-color);
-            transition: all .3 ease-in-out; 
+            transition: all .4s ease-in-out; 
             &:hover{
                 border: 8px solid var(--primary-color);
             }
@@ -146,4 +146,4 @@ const NavigationStyled = styled.nav`
         }
     }
 `;
-export default Navigation;
+export default Navbar;
