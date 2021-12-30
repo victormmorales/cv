@@ -22,6 +22,11 @@ function App() {
           <div className="line-3"></div>
           <div className="line-4"></div>
         </div> */}
+        
+        {/* <div className="light-dark-mode">
+          <div className="left-contet"></div>
+          <div className="right-contet"></div>
+        </div> */}
 
         <Switch>
           <Route path="/" exact>
