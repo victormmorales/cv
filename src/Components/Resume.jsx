@@ -88,7 +88,7 @@ function Resume() {
                     />
                     <ResumeFormacion
                         year="2011 - 2015"
-                        title="Grado Comunicaicón Audiovusal"
+                        title="Grado Comunicación Audiovisual"
                         url='https://www.urjc.es/'
                         logo={UrjcLogo}
                         tecnol="Universidad Rey Juan Carlos, Madrid"

@@ -76,10 +76,10 @@ body::-webkit-scrollbar{
     width: 9px;
     background-color: #383838;
 }
-/* body::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb{
     border-radius: 10px;
     background-color: var(--primary-color);
-} */
+}
 body::-webkit-scrollbar-track{
     border-radius: 10px;
     background-color: var(--border-color);
@@ -119,7 +119,7 @@ h6{
     margin-bottom: 6rem;
 }
 //Floting Toggler
-.light-dark-mode{
+/* .light-dark-mode{
     position: fixed;
     right: 0;
     top: 50%;
@@ -156,7 +156,7 @@ h6{
     .ham-burger-menu{
         display: block;
     }
-  }
+  } */
 //Global Media Queries
 `;
 

@@ -1,4 +1,4 @@
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch as Switching } from "react-router-dom";
 import styled from "styled-components";
 import Sidebar from "./Components/Sidebar";
 //Components
@@ -10,6 +10,8 @@ import PortfolioPage from "./Pages/PortfolioPage";
 import BlogsPage from "./Pages/blog/BlogsPage";
 import EntradaPage from "./Pages/blog/EntradaPage";
 import ContactPage from "./Pages/ContactPage";
+import Switch from '@material-ui/core/Switch'
+import Brightness4Icon from '@material-ui/icons/Brightness4';
 
 function App() {
   return (
@@ -23,20 +25,29 @@ function App() {
           <div className="line-4"></div>
         </div> */}
         
-        {/* <div className="light-dark-mode">
-          <div className="left-contet"></div>
-          <div className="right-contet"></div>
-        </div> */}
+        <div className="light-dark-mode">
+          <div className="left-contet">
+            <Brightness4Icon />
+          </div>
+          <div className="right-contet">
+            <Switch
+              value=""
+              //checked={}
+              //onChange={}
+              inputProps={{ 'arial-label': ''}}
+            />
+          </div>
+        </div>
 
-        <Switch>
+        <Switching>
           <Route path="/" exact>
             <HomePage />
-            <AboutPage />
+            {/* <AboutPage />
             <ResumePage />
             <SkillsPage />
             <PortfolioPage />
             <BlogsPage />
-            <ContactPage />
+            <ContactPage /> */}
           </Route>
 
           <Route path="/about" exact>
@@ -60,7 +71,7 @@ function App() {
           <Route path="/contact" exact>
             <ContactPage />
           </Route>
-        </Switch>
+        </Switching>
 
       </MainContentStyled>
     </div>
@@ -71,6 +82,18 @@ const MainContentStyled = styled.main`
   position: relative;
   margin-left: 16.3rem;
   min-height: 100vh;
+  .light-dark-mode{
+    position: absolute;
+    right: 0;
+    top: 10%;
+    background-color: red;
+    width: 6.5rem;
+    height: 2.5rem;
+    z-index: 15;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
   .lines {
     position: absolute;
     min-height: 100vh;
