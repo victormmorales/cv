@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Route, Switch as Switching } from "react-router-dom";
 import styled from "styled-components";
 import Sidebar from "./Components/Sidebar";
@@ -10,13 +11,34 @@ import PortfolioPage from "./Pages/PortfolioPage";
 import BlogsPage from "./Pages/blog/BlogsPage";
 import EntradaPage from "./Pages/blog/EntradaPage";
 import ContactPage from "./Pages/ContactPage";
-import Switch from '@material-ui/core/Switch'
+import Switch from '@material-ui/core/Switch';
 import Brightness4Icon from '@material-ui/icons/Brightness4';
 
 function App() {
+
+  const [ theme, setTheme ] = useState('dark-theme');
+
+  useEffect(() => {}, []);
+
   return (
     <div className="App">
       <Sidebar />
+
+      <div className="light-dark-mode">
+        <div className="left-contet">
+          <Brightness4Icon />
+        </div>
+        <div className="right-contet">
+          <Switch
+            value=""
+            //checked={}
+            //onChange={}
+            inputProps={{ 'arial-label': ''}}
+            size="medium"
+          />
+        </div>
+      </div>
+
       <MainContentStyled>
         {/* <div className="lines">
           <div className="line-1"></div>
@@ -25,20 +47,6 @@ function App() {
           <div className="line-4"></div>
         </div> */}
         
-        <div className="light-dark-mode">
-          <div className="left-contet">
-            <Brightness4Icon />
-          </div>
-          <div className="right-contet">
-            <Switch
-              value=""
-              //checked={}
-              //onChange={}
-              inputProps={{ 'arial-label': ''}}
-            />
-          </div>
-        </div>
-
         <Switching>
           <Route path="/" exact>
             <HomePage />
@@ -82,19 +90,7 @@ const MainContentStyled = styled.main`
   position: relative;
   margin-left: 16.3rem;
   min-height: 100vh;
-  .light-dark-mode{
-    position: absolute;
-    right: 0;
-    top: 10%;
-    background-color: red;
-    width: 6.5rem;
-    height: 2.5rem;
-    z-index: 15;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .lines {
+  /* .lines {
     position: absolute;
     min-height: 100vh;
     width: 100%;
@@ -107,7 +103,7 @@ const MainContentStyled = styled.main`
       width: 1px;
       min-height: 100vh;
       background-color: var(--border-color);
-    }
+    } */
   }
 `;
 

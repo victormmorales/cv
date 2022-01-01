@@ -119,10 +119,10 @@ h6{
     margin-bottom: 6rem;
 }
 //Floting Toggler
-/* .light-dark-mode{
+.light-dark-mode{
     position: fixed;
     right: 0;
-    top: 50%;
+    top: 10%;
     background-color: var(--background-light-color-2);
     width: 6.5rem;
     height: 2.5rem;
@@ -137,6 +137,7 @@ h6{
       color: var(--white-color);
     }
   }
+
   //Nav Toggler
   .ham-burger-menu{
       position: absolute;
@@ -156,7 +157,7 @@ h6{
     .ham-burger-menu{
         display: block;
     }
-  } */
+  }
 //Global Media Queries
 `;
 

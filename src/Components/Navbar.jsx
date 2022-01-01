@@ -1,10 +1,17 @@
-import React from 'react'
+import { useState, useEffect } from "react";
 import styled from 'styled-components';
 import { Link, useLocation } from "react-router-dom";
 import { LinkedIn, GitHub, Instagram } from '@material-ui/icons';
 import avatar from '../img/hero.jpg';
 
+import Switch from '@material-ui/core/Switch';
+import Brightness4Icon from '@material-ui/icons/Brightness4';
+
 function Navbar() {
+
+    const [ theme, setTheme ] = useState('dark-theme');
+
+    useEffect(() => {}, []);
 
     const location = useLocation();
     
@@ -37,7 +44,23 @@ function Navbar() {
                 <li className="nav-item">
                     <Link to="/contact" exact="true" className={location.pathname ===  '/contact' ? 'active' : null }>Contacto</Link>
                 </li>
+            <div className="light-dark-mode-nav">
+                <div className="left-contet">
+                    <Brightness4Icon />
+                </div>
+                <div className="right-contet">
+                    <Switch
+                    value=""
+                    //checked={}
+                    //onChange={}
+                    inputProps={{ 'arial-label': ''}}
+                    size="medium"
+                    />
+                </div>
+            </div>
             </ul>
+
+
             <footer className="footer">
                 <p>Víctor Ruiz {year}©</p>
 
@@ -82,7 +105,9 @@ const NavbarStyled = styled.nav`
     }
     .nav-items{
         width: 100%;
-        text-align: center;     
+        text-align: center;  
+        display: flex;
+        flex-direction: column; 
         li{
             display: block;
             .active{
@@ -118,6 +143,20 @@ const NavbarStyled = styled.nav`
             a:hover::before{
                 width: 100%;
                 height: 100%;
+            }
+        }
+        .light-dark-mode-nav{
+            margin: 3rem auto 0;
+            width: 6.5rem;
+            height: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg{
+                display: flex;
+                align-items: center;
+                font-size: 1.7rem;
+                color: var(--white-color);
             }
         }
     }
