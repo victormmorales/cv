@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope, faMapMarkedAlt } from "@fortawesome/free-solid-svg-icons";
 // // import EmailIcon from '@mui/icons-material/Email';
 // // import Location from '@mui/icons-material/Location';
-import ContacItem from '../Components/ContacItem';
+import ContacItem from '../Components/Contact/ContacItem';
 
 function ContactPage() {
     return (

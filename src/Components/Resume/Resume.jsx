@@ -1,18 +1,18 @@
 import React from 'react'
 import styled from 'styled-components';
-import { InnerLayout } from '../styles/Layouts';
-import Title from './Title';
-import SmallTitle from './SmallTitle';
+import { InnerLayout } from '../../styles/Layouts';
+import Title from '../Title';
+import SmallTitle from '../SmallTitle';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBriefcase, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import ResumeItem from './ResumeItem';
 import ResumeFormacion from './ResumeFormacion';
 // Logos:
-import FasrevLogo from '../img/logos/fasrev.png';
-import EciLogo from '../img/logos/eci.png';
-import UdemyLogo from '../img/logos/udemy.png';
-import IronhackLogo from '../img/logos/ironhack.png';
-import UrjcLogo from '../img/logos/urjc.png';
+import FasrevLogo from '../../img/logos/fasrev.png';
+import EciLogo from '../../img/logos/eci.png';
+import UdemyLogo from '../../img/logos/udemy.png';
+import IronhackLogo from '../../img/logos/ironhack.png';
+import UrjcLogo from '../../img/logos/urjc.png';
 
 function Resume() {
     return (

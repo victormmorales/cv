@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import { GitHub } from "@material-ui/icons";
+import { GitHub, Language  } from "@material-ui/icons";
+
 
 function Menu({ menuItem }) {
   return (
     <MenuItemStyled>
-      {menuItem.map(({ id, image, link1, title, text }, i) => (
+      {menuItem.map(({ id, image, link1, link2, title, text }, i) => (
         <div className="grid-item" key={id}>
           <div className="portfolio-content">
             <div className="portfolio-image">
@@ -14,6 +15,9 @@ function Menu({ menuItem }) {
                 <li>
                   <a href={link1} target="_blank" rel="noreferrer">
                     <GitHub />
+                  </a>
+                  <a href={link2} target="_blank" rel="noreferrer">
+                    <Language />
                   </a>
                 </li>
               </ul>
@@ -73,6 +77,9 @@ const MenuItemStyled = styled.div`
             align-items: center;
             justify-content: center;
             transition: all 0.4s ease-in-out;
+            &:last-child{
+              margin-left: 0.5rem;
+            }
           }
         }
       }

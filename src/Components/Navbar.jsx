@@ -20,7 +20,7 @@ function Navbar() {
     return (
         <NavbarStyled>
             <div className="avatar">
-                <img src={avatar} alt=""/>
+                <Link to="/"><img src={avatar} alt=""/></Link>
             </div>
             <ul className="nav-items">
                 <li className="nav-item">

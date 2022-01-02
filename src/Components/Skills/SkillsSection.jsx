@@ -1,14 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import { InnerLayout} from '../styles/Layouts';
-import Title from './Title';
+import { InnerLayout} from '../../styles/Layouts';
 import SkillCard from './SkillCard';
-import { SkillData } from '../data/DataSkills';
-// Imgs:
-import react from '../img/logos/react.png';
-import javascript from '../img/logos/javascript.png';
-import html from '../img/logos/html.png';
-import css from '../img/logos/css.png';
+import { SkillData } from '../../data/DataSkills';
+// // Imgs:
+// import react from '../img/logos/react.png';
+// import javascript from '../img/logos/javascript.png';
+// import html from '../img/logos/html.png';
+// import css from '../img/logos/css.png';
 
 function SkillsSection() {
     return (

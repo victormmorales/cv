@@ -50,12 +50,12 @@ function App() {
         <Switching>
           <Route path="/" exact>
             <HomePage />
-            {/* <AboutPage />
+            <AboutPage />
             <ResumePage />
             <SkillsPage />
             <PortfolioPage />
             <BlogsPage />
-            <ContactPage /> */}
+            <ContactPage />
           </Route>
 
           <Route path="/about" exact>

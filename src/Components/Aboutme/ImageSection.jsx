@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import PrimaryButton from "./PrimaryButton";
+import PrimaryButton from "../PrimaryButton";
 // Img
-import resume from "../img/resume.jpg";
+import resume from "../../img/resume.jpg";
 
 function ImageSection() {
   const year = new Date().getFullYear();

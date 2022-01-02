@@ -1,72 +1,45 @@
-import css1 from '../img/portfolios/cv_css.png';
-import css2 from '../img/portfolios/ms.png';
-import react1 from '../img/portfolios/react_styled.png';
-import img2 from '../img/portfolios/maya-4.jpg';
-import img3 from '../img/portfolios/maya-3.jpg';
+// Images:
+import mern from '../img/portfolios/mern.png';
+import simpson from '../img/portfolios/simpson.png';
+import trivago from '../img/portfolios/trivago.png';
+import toyhacker from '../img/portfolios/toyhacker.png';
 
 const portfolios = [
     {
         id: 1,
-        category: 'CSS',
-        image: css1,
-        link1: 'https://www.google.com',
-        link2: 'https://www.google.com',
-        title: 'Responsive Resume',
-        text: 'Created with only HTML and CSS.'
+        category: 'MERN',
+        image: mern,
+        link1: 'https://github.com/militroncho7/tus-proyectos',
+        link2: 'https://tusproyectos.netlify.app/',
+        title: 'Admin de Proyectos 📝',
+        text: 'Mongo - Express - Node - React'
     },
     {
         id: 2,
-        category: 'Python',
-        image: img3,
-        link1: 'https://www.google.com',
-        link2: 'https://www.google.com',
-        title: 'How To Animate In Maya',
-        text: 'Number one Animation Application'
+        category: 'ReactJS',
+        image: simpson,
+        link1: 'https://github.com/militroncho7/simpsons',
+        link2: 'https://tender-curie-6812b3.netlify.app/',
+        title: 'Simpson API 📺',
+        text: 'React - API - Hooks - CSS'
     },
     {
         id: 3,
-        category: 'Javascript',
-        image: img3,
-        link1: 'https://www.google.com',
-        link2: 'https://www.google.com',
-        title: 'How To Animate In Maya',
-        text: 'Number one Animation Application'
+        category: 'Gatsby',
+        image: trivago,
+        link1: 'https://github.com/militroncho7/trivago',
+        link2: 'https://trivago-hotel.netlify.app/',
+        title: 'Trivago Page ✈️',
+        text: 'Gatsby - React - Hooks - CMS'
     },
     {
         id: 4,
-        category: 'Animation',
-        image: img2,
-        link1: 'https://www.google.com',
-        link2: 'https://www.google.com',
-        title: 'How To Use Blender',
-        text: 'Free Animation Software'
-    },
-    {
-        id: 5,
-        category: 'Animation',
-        image: img2,
-        link1: 'https://www.google.com',
-        link2: 'https://www.google.com',
-        title: 'How To Use Blender',
-        text: 'Free Animation Software'
-    },
-    {
-        id: 6,
-        category: 'React JS',
-        image: react1,
-        link1: 'https://www.google.com',
-        link2: 'https://www.google.com',
-        title: 'Responsive Portfolio Website',
-        text: 'Created using different technologies such as Material UI, Styled-Components and more...'
-    },
-    {
-        id: 7,
-        category: 'CSS',
-        image: css2,
-        link1: 'https://www.google.com',
-        link2: 'https://www.google.com',
-        title: 'Microsoft Website Clone',
-        text: 'Created using HTML and CSS'
+        category: 'Javascript',
+        image: toyhacker,
+        link1: 'https://github.com/militroncho7/toy-hacker-videogame',
+        link2: 'https://militroncho7.github.io/toy-hacker-videogame/',
+        title: 'Toy Hacker 🕹 🦖',
+        text: 'HTML - CSS _ JavaScript'
     }
 ]
 

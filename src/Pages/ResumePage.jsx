@@ -1,8 +1,7 @@
 import React from 'react';
 import { MainLayout } from '../styles/Layouts';
-import Resume from '../Components/Resume';
-// import Skill from '../Components/Skill';
-// import Title from '../Components/Title';
+import Resume from '../Components/Resume/Resume';
+// import Skill from '../Components/Skills/Skill';
 
 function ResumePage() {
     return (

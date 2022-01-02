@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import Title from '../Components/Title';
 import { MainLayout } from '../styles/Layouts';
-import SkillsSection from '../Components/SkillsSection';
+import SkillsSection from '../Components/Skills/SkillsSection';
 
 function AboutPage() {
     return (
