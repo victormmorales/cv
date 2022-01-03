@@ -21,6 +21,12 @@ const ContactItemStyled = styled.div`
     background-color: var(--background-dark-grey);
     display: flex;
     align-items: center;
+    @media screen and (max-width:500px) {
+        padding: 0.5rem;
+        display: grid;
+        grid-template-columns: 15% 80%;
+        gap: 5%
+    }
     /* &:first-child{
         margin-top: 4rem;
     } */
@@ -39,6 +45,11 @@ const ContactItemStyled = styled.div`
         svg{
             font-size: 1.5rem;
         }
+        @media screen and (max-width:500px) {
+            border: none;
+            padding: 0 0.5rem;
+            margin: 0;
+        }
     }
     .right-content{
         h6{
@@ -48,6 +59,11 @@ const ContactItemStyled = styled.div`
         }
         p{
             padding: 0.1rem 0;
+        }
+        @media screen and (max-width:500px) {
+            h6, p {
+                font-size: 1rem;
+            }
         }
     }
 `;

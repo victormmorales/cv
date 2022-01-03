@@ -38,6 +38,14 @@ function EntradaPage() {
 }
 
 const EntradaStyled = styled.div`
+    @media screen and (max-width:500px){
+        h2{
+            font-size: 2rem;
+            span{
+                font-size: 2rem;
+            }
+        }
+    }
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,6 +59,12 @@ const EntradaStyled = styled.div`
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 3rem;
+        @media screen and (max-width:1200px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+      }
         .image {
             width: 90%;
             img{
@@ -60,10 +74,14 @@ const EntradaStyled = styled.div`
         .textoPrincipal{
             p{
                 font-size: 1rem;
+
             }
         }
     }
     .textoSecundario{
+        @media screen and (max-width:1200px) {
+            padding: 0 2rem;
+        }
         p{
             margin-top: 1rem;
             font-size: 1rem;
@@ -72,6 +90,9 @@ const EntradaStyled = styled.div`
     .imageSecundaria{
         margin: 2rem;
         width: 50%;
+        @media screen and (max-width:1200px) {
+            width: 80%;
+        }
         img{
             width: 100%;
         }        

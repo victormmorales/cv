@@ -34,11 +34,22 @@ function BlogsPage() {
 }
 
 const BlogStyled = styled.div`
+  @media screen and (max-width:500px){
+      h2{
+          font-size: 2rem;
+          span{
+              font-size: 2rem;
+          }
+      }
+  }
   .blog {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 2rem;
     grid-row-gap: 3rem;
+    @media screen and (max-width:500px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
     .blog-item {
       background-color: var(--background-dark-grey);
       padding: 1rem 1rem;
@@ -78,6 +89,9 @@ const BlogStyled = styled.div`
         &:hover {
           color: var(--primary-color);
         }
+        @media screen and (max-width:1200px) {
+          font-size: 1rem;
+      }
       }
     }
   }

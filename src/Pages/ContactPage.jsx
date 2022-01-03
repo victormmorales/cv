@@ -12,8 +12,8 @@ import ContacItem from '../Components/Contact/ContacItem';
 function ContactPage() {
     return (
         <MainLayout>
-            <Title title="Contacto" span="Contact0" />
             <ContactStyled>
+                <Title title="Contacto" span="Contact0" />
                 <InnerLayout className='contact-section'>
                     <div className="left-content">
                         <div className="contact-title">
@@ -49,30 +49,64 @@ function ContactPage() {
 };
 
 const ContactStyled = styled.section`
+    @media screen and (max-width:500px){
+        h2{
+            font-size: 2rem;
+            span{
+                font-size: 2rem;
+            }
+        }
+    }
     .contact-section{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
+        @media screen and (max-width:1200px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
         .right-content{
             display: flex;
             flex-direction: column;
             /* justify-content: space-between; */
         }
-        .contact-title {
+        .left-content{
+            @media screen and (max-width:1200px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .contact-title {
             h4{
                 padding: 1rem 0;
                 font-size: 1.8rem;
                 span{
                     font-size: 1.8rem;
                 }
+                @media screen and (max-width:500px) {
+                    font-size: 1.5rem;
+                    span{
+                        font-size: 1.5rem;
+                    }
+                }
             }
         }
         .form {
             width: 100%;
+            @media screen and (max-width:500px) {
+                width: 90%;
+                margin-right: 1rem;
+            }
             .form-field{
                 margin-top: 2rem;
                 position: relative;
                 width: 100%;
+                @media screen and (max-width:1200px) {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 2rem;
+                }
                 label{
                     position: absolute;
                     left: 20px;
@@ -104,6 +138,8 @@ const ContactStyled = styled.section`
             }
         }
     }
+        }
+        
 `;
 
 export default ContactPage
