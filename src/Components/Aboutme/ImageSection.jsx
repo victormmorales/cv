@@ -3,6 +3,8 @@ import styled from "styled-components";
 import PrimaryButton from "../PrimaryButton";
 // Img
 import resume from "../../img/resume.jpg";
+import cv from '../../img/cv/CV-victor-manuel-morales-ruiz_compressed.pdf';
+
 
 function ImageSection() {
   const year = new Date().getFullYear();
@@ -50,7 +52,7 @@ function ImageSection() {
             <p>: Español</p>
           </div>
         </div>
-        <PrimaryButton title="Descargar CV" />
+        <PrimaryButton title="Descargar CV" type="submit" onclick={`${cv}`} />
       </div>
     </ImageSectionStyled>
   );

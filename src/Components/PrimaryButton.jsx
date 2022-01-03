@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
+import cv from '../img/cv/CV-victor-manuel-morales-ruiz_compressed.pdf'
 
 function PrimaryButton({ title }) {
     return (
-        <PrimaryButtonStyled>
+        <PrimaryButtonStyled >
             { title }
         </PrimaryButtonStyled>
     )
