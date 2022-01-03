@@ -18,9 +18,10 @@ function AboutPage() {
 const SkillsStyled = styled.section`
     @media screen and (max-width:500px){
         h2{
-            font-size: 2rem;
+            font-size: 1.8rem;
             span{
-                font-size: 2rem;
+                opacity: 0.3;
+                font-size: 2.2rem;
             }
         }
     }

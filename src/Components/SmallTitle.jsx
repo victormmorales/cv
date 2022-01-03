@@ -20,10 +20,16 @@ const SmallTitleStyled = styled.div`
         padding-right: 1rem;
         svg{
             font-size: 2.5rem;
+            @media screen and (max-width: 500px) {
+                font-size: 2rem;
+            }
         }
     }
     h3{
         font-size: 2rem;
+        @media screen and (max-width: 500px) {
+            font-size: 1.8rem;
+        }
     }
 `;
 

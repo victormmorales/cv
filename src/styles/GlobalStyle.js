@@ -138,29 +138,15 @@ h6{
   }
 
   //Nav Toggler
-  .ham-burguer-menu{
-        position: fixed;
-        right: 1%;
-        top: 1%;
-        z-index: 15;
-        svg{
-            font-size: 2.5rem;
-        }
-    }
-    .nav-toggle {
-        transform: translateX(0);
-        z-index: 20;
-    }
-    @media screen and (max-width:1200px){
-    }
-  /* .ham-burger-menu{
-      position: absolute;
+  .ham-burger-menu{
+      position: fixed;
       right: 5%;
       top: 3%; 
       display: none;
       z-index: 15;
       svg{
           font-size: 3rem;
+          opacity: .8;
       }
     }
     .nav-toggle{
@@ -170,9 +156,11 @@ h6{
   @media screen and (max-width:1200px){
     .ham-burger-menu{
         display: block;
+        svg{
+            font-size: 2.5rem;
+        }
     }
-  } */
-//Global Media Queries
+  }
 `;
 
 export default GlobalStyle;

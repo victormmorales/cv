@@ -107,13 +107,15 @@ const ResumeStyled = styled.section`
     .resume-content {
         border-left: 2px solid var(--border-color);
     }
-    @media screen and (max-width: 500px) {
-        h2 {
-            font-size: 2rem;
+    @media screen and (max-width:500px){
+        h2{
+            font-size: 1.8rem;
             span{
-                font-size: 2rem;
+                opacity: 0.3;
+                font-size: 2.2rem;
             }
         }
+    }
         .small-title{
             margin-top: 1rem;
         }

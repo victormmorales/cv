@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Link, useLocation } from "react-router-dom";
 import { LinkedIn, GitHub, Instagram } from '@material-ui/icons';
 import avatar from '../img/hero.jpg';
-
+// Theme Button:
 import Switch from '@material-ui/core/Switch';
 import Brightness4Icon from '@material-ui/icons/Brightness4';
 
@@ -147,7 +147,7 @@ const NavbarStyled = styled.nav`
                     left: 0;
                     width: 0;
                     height: 50%;
-                    background-color: var( --primary-color);
+                    background-color: var(--primary-color);
                     transition: All 0.4s cubic-bezier(1,-0.2,.25,.95) ;
                     opacity: 0.21;
                     z-index: -1;
