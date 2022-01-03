@@ -11,14 +11,29 @@ import PortfolioPage from "./Pages/PortfolioPage";
 import BlogsPage from "./Pages/blog/BlogsPage";
 import EntradaPage from "./Pages/blog/EntradaPage";
 import ContactPage from "./Pages/ContactPage";
+import MenuIcon from '@material-ui/icons/Menu';
 import Switch from '@material-ui/core/Switch';
 import Brightness4Icon from '@material-ui/icons/Brightness4';
+import { IconButton } from "@material-ui/core";
 
 function App() {
 
   const [ theme, setTheme ] = useState('dark-theme');
+  const [ checked, setChecked] = useState(false);
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    document.documentElement.className = theme;
+  }, [theme]);
+
+  const themeToggler = () => {
+    if( theme === 'light-theme') {
+      setTheme('dark-theme');
+      setChecked(!checked);
+    } else {
+        setTheme('light-theme');
+        setChecked(!checked);
+    }
+  };
 
   return (
     <div className="App">
@@ -31,13 +46,19 @@ function App() {
         <div className="right-contet">
           <Switch
             value=""
-            //checked={}
-            //onChange={}
+            checked={checked}
             inputProps={{ 'arial-label': ''}}
             size="medium"
+            onClick={themeToggler}
           />
         </div>
       </div>
+
+      <div className="ham-burguer-menu">
+          <IconButton>
+              <MenuIcon />
+          </IconButton>
+      </div> 
 
       <MainContentStyled>
         {/* <div className="lines">
@@ -90,6 +111,9 @@ const MainContentStyled = styled.main`
   position: relative;
   margin-left: 16.3rem;
   min-height: 100vh;
+  @media screen and (max-width: 1200px){
+      margin-left: 0;
+    }
   /* .lines {
     position: absolute;
     min-height: 100vh;

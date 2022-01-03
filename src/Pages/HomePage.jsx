@@ -90,12 +90,12 @@ const HomePageStyled = styled.header`
             }
             .i-github{
                 &:hover{
-                    color: #b1fffb;
+                    color: #dc3663;
                 }
             }
             .i-instagram{
                 &:hover{
-                    color: #dc3663;
+                    color: #fcac27;
                 }
             }
         }

@@ -1,5 +1,4 @@
-import {createGlobalStyle} from 'styled-components';
-
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 :root{
@@ -139,7 +138,18 @@ h6{
   }
 
   //Nav Toggler
-  .ham-burger-menu{
+  .ham-burguer-menu{
+        position: absolute;
+        right: 10%;
+        top: 5%;
+        z-index: 15;
+        svg{
+            font-size: 3rem;
+        }
+    }
+    @media screen and (max-width:1200px){
+    }
+  /* .ham-burger-menu{
       position: absolute;
       right: 5%;
       top: 3%; 
@@ -157,7 +167,7 @@ h6{
     .ham-burger-menu{
         display: block;
     }
-  }
+  } */
 //Global Media Queries
 `;
 

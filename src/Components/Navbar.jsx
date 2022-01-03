@@ -10,8 +10,21 @@ import Brightness4Icon from '@material-ui/icons/Brightness4';
 function Navbar() {
 
     const [ theme, setTheme ] = useState('dark-theme');
+    const [ checked, setChecked] = useState(false);
 
-    useEffect(() => {}, []);
+    useEffect(() => {
+        document.documentElement.className = theme;
+    }, [theme]);
+
+    const themeToggler = () => {
+        if( theme === 'light-theme') {
+          setTheme('dark-theme');
+          setChecked(!checked);
+        } else {
+            setTheme('light-theme');
+            setChecked(!checked);
+        }
+    };
 
     const location = useLocation();
     
@@ -51,10 +64,10 @@ function Navbar() {
                 <div className="right-contet">
                     <Switch
                     value=""
-                    //checked={}
-                    //onChange={}
+                    checked={checked}
                     inputProps={{ 'arial-label': ''}}
                     size="medium"
+                    onClick={themeToggler}
                     />
                 </div>
             </div>
