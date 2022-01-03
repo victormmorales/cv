@@ -29,7 +29,7 @@ function ResumeItem({ year, title, url,  logo, tecnol, funct1, funct2, funct3, f
 const ResumeItemStyled = styled.div`
     display: flex;
     padding: 1rem;
-    width: 70%;
+    width: 100%;
     &:last-child{
         margin-bottom: 3rem;
     }
@@ -91,6 +91,35 @@ const ResumeItemStyled = styled.div`
             font-size: 1.5rem;
             padding-bottom: .4rem;
         } */
+    }
+    @media screen and (max-width: 500px) {
+        display: flex;
+        flex-direction: column;
+        .left-content{
+            width: 100%;
+            margin-bottom: 0.5rem;
+        }
+        .right-content{
+            padding: 1rem;
+            margin-left: 1rem;
+            border-left: none;
+            &::before{
+                content: '';
+                position: relative;
+                left: 0;
+                top: 0;
+                height: 0;
+                width: 0;
+                background-color: none;
+            }
+            h5 {
+                font-size: 1.5rem;
+                width: 100%;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
     }
 `;
 

@@ -37,6 +37,24 @@ const ButtonStyled = styled.div`
             margin-right: .6rem;
         }
     }
+    @media screen and (max-width:1200px){
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 auto;
+        button{
+            width: 80%;
+            margin-right: 0;
+        }
+    }
+    @media screen and (max-width:1200px){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+        button{
+            width: 100%;
+            font-size: 1rem;
+        }
+    }
 `;
 
 export default Button

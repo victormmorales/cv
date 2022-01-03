@@ -18,7 +18,14 @@ function AboutPage() {
 };
 
 const AboutStyled = styled.section`
-
+    @media screen and (max-width:500px){
+        h2{
+            font-size: 2rem;
+            span{
+                font-size: 2rem;
+            }
+        }
+    }
 `;
 
 export default AboutPage

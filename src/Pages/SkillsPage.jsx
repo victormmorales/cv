@@ -7,16 +7,23 @@ import SkillsSection from '../Components/Skills/SkillsSection';
 function AboutPage() {
     return (
         <MainLayout>
-            <AboutStyled>
+            <SkillsStyled>
                 <Title  title='Skills' span='Skills' />
                 <SkillsSection />
-            </AboutStyled>
+            </SkillsStyled>
         </MainLayout>
     )
 };
 
-const AboutStyled = styled.section`
-
+const SkillsStyled = styled.section`
+    @media screen and (max-width:500px){
+        h2{
+            font-size: 2rem;
+            span{
+                font-size: 2rem;
+            }
+        }
+    }
 `;
 
 export default AboutPage

@@ -11,35 +11,37 @@ import PortfolioPage from "./Pages/PortfolioPage";
 import BlogsPage from "./Pages/blog/BlogsPage";
 import EntradaPage from "./Pages/blog/EntradaPage";
 import ContactPage from "./Pages/ContactPage";
-import MenuIcon from '@material-ui/icons/Menu';
-import Switch from '@material-ui/core/Switch';
-import Brightness4Icon from '@material-ui/icons/Brightness4';
+import MenuIcon from "@material-ui/icons/Menu";
+// import Switch from "@material-ui/core/Switch";
+// import Brightness4Icon from "@material-ui/icons/Brightness4";
 import { IconButton } from "@material-ui/core";
 
 function App() {
-
-  const [ theme, setTheme ] = useState('dark-theme');
-  const [ checked, setChecked] = useState(false);
+  const [theme, setTheme] = useState("dark-theme");
+  const [checked, setChecked] = useState(false);
 
   useEffect(() => {
     document.documentElement.className = theme;
   }, [theme]);
 
   const themeToggler = () => {
-    if( theme === 'light-theme') {
-      setTheme('dark-theme');
+    if (theme === "light-theme") {
+      setTheme("dark-theme");
       setChecked(!checked);
     } else {
-        setTheme('light-theme');
-        setChecked(!checked);
+      setTheme("light-theme");
+      setChecked(!checked);
     }
   };
 
+  //Hamburguer
+  const [navToggle, setNavToggle] = useState(false);
+
   return (
     <div className="App">
-      <Sidebar />
+      <Sidebar navToggle={navToggle} />
 
-      <div className="light-dark-mode">
+      {/* <div className="light-dark-mode">
         <div className="left-contet">
           <Brightness4Icon />
         </div>
@@ -47,18 +49,18 @@ function App() {
           <Switch
             value=""
             checked={checked}
-            inputProps={{ 'arial-label': ''}}
+            inputProps={{ "arial-label": "" }}
             size="medium"
             onClick={themeToggler}
           />
         </div>
-      </div>
+      </div> */}
 
       <div className="ham-burguer-menu">
-          <IconButton>
-              <MenuIcon />
-          </IconButton>
-      </div> 
+        <IconButton onClick={() => setNavToggle(!navToggle)}>
+          <MenuIcon />
+        </IconButton>
+      </div>
 
       <MainContentStyled>
         {/* <div className="lines">
@@ -67,7 +69,7 @@ function App() {
           <div className="line-3"></div>
           <div className="line-4"></div>
         </div> */}
-        
+
         <Switching>
           <Route path="/" exact>
             <HomePage />
@@ -101,7 +103,6 @@ function App() {
             <ContactPage />
           </Route>
         </Switching>
-
       </MainContentStyled>
     </div>
   );

@@ -107,6 +107,17 @@ const ResumeStyled = styled.section`
     .resume-content {
         border-left: 2px solid var(--border-color);
     }
+    @media screen and (max-width: 500px) {
+        h2 {
+            font-size: 2rem;
+            span{
+                font-size: 2rem;
+            }
+        }
+        .small-title{
+            margin-top: 1rem;
+        }
+    }
 `;
 
 export default Resume

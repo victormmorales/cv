@@ -59,12 +59,6 @@ function ImageSection() {
 const ImageSectionStyled = styled.div`
   margin-top: 5rem;
   display: flex;
-  @media screen and (max-width: 1000px) {
-    flex-direction: column;
-    .left-content {
-      margin-bottom: 2rem;
-    }
-  }
   .left-content {
     width: 60%;
     img {
@@ -97,6 +91,36 @@ const ImageSectionStyled = styled.div`
       .info {
         p {
           padding: 0.3rem 0;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .left-content {
+      margin-bottom: 2rem;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .left-content {
+    width: 100%;
+    }
+    .right-content {
+      h4 {
+        font-size: 1.3rem;
+        span{
+          font-size: 1.3rem;
+        }
+      }
+      .about-info {
+        margin: 1.5rem auto;
+        .info-title {
+        padding-right: 0.5rem;
+        p{
+          font-size: 1rem;
+        }
         }
       }
     }

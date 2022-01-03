@@ -2,9 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import Navbar from './Navbar';
 
-function Sidebar() {
+function Sidebar({ navToggle }) {
     return (
-        <SidebarStyled>
+        <SidebarStyled className={ navToggle ? 'nav-toggle' : ''}>
             <Navbar />
         </SidebarStyled>
     )
@@ -20,6 +20,7 @@ const SidebarStyled = styled.div`
     transition: all .4s ease-in-out;
     @media screen and (max-width: 1200px){
         transform: translateX(-100%);
+        z-index: 20;
     }
 `;
 

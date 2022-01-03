@@ -4,6 +4,7 @@ import portfolios from '../data/portfolio';
 import Title from '../Components/Title';
 import Menu from '../Components/Portfolio/Menu';
 import Button from '../Components/Portfolio/Button';
+import styled from 'styled-components';
 
 function PortfolioPage() {
     const allButtons = ['All', ...new Set( portfolios.map(item => item.category) )];
@@ -25,13 +26,26 @@ function PortfolioPage() {
 
     return (
         <MainLayout>
-            <Title title="Portfolio" span="Portfolio" />
-            <InnerLayout>
-                <Button filter={filter} button={button} />
-                <Menu menuItem={menuItem} />
-            </InnerLayout>
+            <PortfolioStyled>
+                <Title title="Portfolio" span="Portfolio" />
+                <InnerLayout>
+                    <Button filter={filter} button={button} />
+                    <Menu menuItem={menuItem} />
+                </InnerLayout>
+            </PortfolioStyled>
         </MainLayout>
     )
 }
+
+const PortfolioStyled = styled.div`
+    @media screen and (max-width:500px){
+        h2{
+            font-size: 2rem;
+            span{
+                font-size: 2rem;
+            }
+        }
+    }
+`;
 
 export default PortfolioPage

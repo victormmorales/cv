@@ -139,13 +139,17 @@ h6{
 
   //Nav Toggler
   .ham-burguer-menu{
-        position: absolute;
-        right: 10%;
-        top: 5%;
+        position: fixed;
+        right: 1%;
+        top: 1%;
         z-index: 15;
         svg{
-            font-size: 3rem;
+            font-size: 2.5rem;
         }
+    }
+    .nav-toggle {
+        transform: translateX(0);
+        z-index: 20;
     }
     @media screen and (max-width:1200px){
     }
