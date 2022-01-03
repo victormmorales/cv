@@ -10,6 +10,7 @@ function PortfolioPage() {
     const allButtons = ['All', ...new Set( portfolios.map(item => item.category) )];
     // States
     const [menuItem, setMenuItem] = useState(portfolios);
+    // eslint-disable-next-line
     const [button, setButton] = useState(allButtons);
 
     // Función para filtrar

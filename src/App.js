@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Route, Switch as Switching } from "react-router-dom";
 import styled from "styled-components";
 import Sidebar from "./Components/Sidebar";
@@ -17,22 +17,22 @@ import MenuIcon from "@material-ui/icons/Menu";
 import { IconButton } from "@material-ui/core";
 
 function App() {
-  const [theme, setTheme] = useState("dark-theme");
-  const [checked, setChecked] = useState(false);
+//   const [theme, setTheme] = useState("dark-theme");
+//   const [checked, setChecked] = useState(false);
 
-  useEffect(() => {
-    document.documentElement.className = theme;
-  }, [theme]);
+//   useEffect(() => {
+//     document.documentElement.className = theme;
+//   }, [theme]);
 
-  const themeToggler = () => {
-    if (theme === "light-theme") {
-      setTheme("dark-theme");
-      setChecked(!checked);
-    } else {
-      setTheme("light-theme");
-      setChecked(!checked);
-    }
-  };
+//   const themeToggler = () => {
+//     if (theme === "light-theme") {
+//       setTheme("dark-theme");
+//       setChecked(!checked);
+//     } else {
+//       setTheme("light-theme");
+//       setChecked(!checked);
+//     }
+//   };
 
   //Hamburguer
   const [navToggle, setNavToggle] = useState(false);
@@ -63,12 +63,6 @@ function App() {
       </div>
 
       <MainContentStyled>
-        {/* <div className="lines">
-          <div className="line-1"></div>
-          <div className="line-2"></div>
-          <div className="line-3"></div>
-          <div className="line-4"></div>
-        </div> */}
 
         <Switching>
           <Route path="/" exact>
@@ -115,20 +109,6 @@ const MainContentStyled = styled.main`
   @media screen and (max-width: 1200px){
       margin-left: 0;
     }
-  /* .lines {
-    position: absolute;
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    .line-1,
-    .line-2,
-    .line-3,
-    .line-4 {
-      width: 1px;
-      min-height: 100vh;
-      background-color: var(--border-color);
-    } */
   }
 `;
 
