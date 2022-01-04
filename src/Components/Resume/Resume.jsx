@@ -17,7 +17,7 @@ import UrjcLogo from '../../img/logos/urjc.png';
 function Resume() {
     return (
         <ResumeStyled>
-            <Title title="Curriculum" span="Curriculum" />
+            <Title title="Currículum" span="Currículum" />
             <InnerLayout>
                 {/* Experiencia laboral */}
                 <div className="small-title">

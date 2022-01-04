@@ -7,7 +7,7 @@ import cv from '../../img/cv/CV-victor-manuel-morales-ruiz_compressed.pdf';
 
 
 function ImageSection() {
-  const year = new Date().getFullYear();
+  // const year = new Date().getFullYear();
 
   return (
     <ImageSectionStyled>
@@ -22,8 +22,6 @@ function ImageSection() {
         <br/>
         Me apasiona el mundo del diseño y experiencia de usuario 👨🏻‍💻.
         <br/>
-        Siempre que desarrollo un proyecto trato de ofrecer la mejor experiencia de usuario.
-        <br/>
         Procuro que todos mis desarrollos sean únicos y que aporten algo distinto.
         <br/>
         ¡Siempre Responsive! 📲 😏
@@ -36,21 +34,21 @@ function ImageSection() {
 
         <div className="about-info">
           <div className="info-title">
-            <p>Nombre</p>
-            <p>Apellidos</p>
-            <p>Edad</p>
-            <p>Nacionalidad</p>
-            <p>Ciudad</p>
-            <p>Idioma</p>
+            <p>- Nombre: Víctor Manuel</p>
+            <p>- Apellidos: Morales Ruiz</p>
+            {/* <p>Edad</p> */}
+            <p>- Nacionalidad: Española</p>
+            <p>- Ciudad: Madrid</p>
+            <p>- Idioma: Español</p>
           </div>
-          <div className="info">
+          {/* <div className="info">
             <p>: Víctor Manuel</p>
             <p>: Morales Ruiz</p>
             <p>: {year - 1992}</p>
             <p>: Español</p>
             <p>: Madrid</p>
             <p>: Español</p>
-          </div>
+          </div> */}
         </div>
         <PrimaryButton title="Descargar CV" type="submit" onclick={`${cv}`} />
       </div>

@@ -43,7 +43,7 @@ function Navbar() {
                     <Link to="/about" exact="true" className={location.pathname ===  '/about' ? 'active' : null }>Sobre mí</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/resume" exact="true" className={location.pathname ===  '/resume' ? 'active' : null }>Curriculum</Link>
+                    <Link to="/resume" exact="true" className={location.pathname ===  '/resume' ? 'active' : null }>Currículum</Link>
                 </li>
                 <li className="nav-item">
                     <Link to="/skills" exact="true" className={location.pathname ===  '/skills' ? 'active' : null }>Skills</Link>
@@ -159,6 +159,9 @@ const NavbarStyled = styled.nav`
             }
         }
         .light-dark-mode-nav{
+            @media screen and (max-width: 1200px) {
+                margin-top: 1rem;
+            }
             margin: 3rem auto 0;
             width: 6.5rem;
             height: 2.5rem;
@@ -180,6 +183,7 @@ const NavbarStyled = styled.nav`
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 2rem;
         .icons{
             margin: 0.5rem 0;
             display: flex;
