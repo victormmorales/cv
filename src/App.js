@@ -12,6 +12,7 @@ import BlogsPage from "./Pages/blog/BlogsPage";
 import EntradaPage from "./Pages/blog/EntradaPage";
 import ContactPage from "./Pages/ContactPage";
 import MenuIcon from "@material-ui/icons/Menu";
+import CloseIcon from "@material-ui/icons/Close";
 // import Switch from "@material-ui/core/Switch";
 // import Brightness4Icon from "@material-ui/icons/Brightness4";
 import { IconButton } from "@material-ui/core";
@@ -58,7 +59,7 @@ function App() {
 
       <div className="ham-burger-menu">
         <IconButton onClick={() => setNavToggle(!navToggle)} onBlur={() => setNavToggle(false)}>
-          <MenuIcon />
+          {navToggle ? <CloseIcon /> : <MenuIcon />}
         </IconButton>
       </div>
 
