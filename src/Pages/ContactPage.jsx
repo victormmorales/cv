@@ -38,9 +38,15 @@ function ContactPage() {
                         </form>
                     </div>
                     <div className="right-content">
-                        <ContacItem icon={<FontAwesomeIcon icon={faPhone}/>} title="Teléfono" contact1="+34 617 688 877" />
-                        <ContacItem icon={<FontAwesomeIcon icon={faEnvelope}/>} title="Email" contact1="vm.moralesruiz@gmail.com" />
-                        <ContacItem icon={<FontAwesomeIcon icon={faMapMarkedAlt}/>} title="Ubicación" contact1="Madrid" />
+                        <a href="tel: +34617688877" target="_blank" rel="noreferrer">
+                            <ContacItem icon={<FontAwesomeIcon icon={faPhone}/>} title="Teléfono" contact1="+34 617 688 877" />
+                        </a>
+                        <a href="mailto: vm.moralesruiz@gmail.com" target="_blank" rel="noreferrer">
+                            <ContacItem icon={<FontAwesomeIcon icon={faEnvelope}/>} title="Email" contact1="vm.moralesruiz@gmail.com" />
+                        </a>
+                        <a href="https://www.google.com/maps?q=madrid&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjZj6ruk6f1AhX9CGMBHVW7A0MQ_AUoAXoECAIQAw" target="_blank" rel="noreferrer">
+                            <ContacItem icon={<FontAwesomeIcon icon={faMapMarkedAlt}/>} title="Ubicación" contact1="Madrid" />
+                        </a>
                     </div>
                 </InnerLayout>
             </ContactStyled>
@@ -69,6 +75,9 @@ const ContactStyled = styled.section`
             display: flex;
             flex-direction: column;
             /* justify-content: space-between; */
+            a{
+                margin-bottom: 2rem;
+            }
         }
         .left-content{
             @media screen and (max-width:1200px) {

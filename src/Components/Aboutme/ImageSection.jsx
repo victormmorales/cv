@@ -18,15 +18,18 @@ function ImageSection() {
         <h4>Para conocerme un poco <span>más...</span></h4>
 
         <p className="paragraph">
-        ¡Hola! soy <span>Víctor</span>👋🏽 Desarrollador Web Full Stack.
+        ¡Hola! 👋🏽  Para no hacerlo muy largo, me presento. Soy <span>Víctor</span> y trabajo como Full Stack Developer.
         <br/>
-        Me apasiona el mundo del diseño y experiencia de usuario 👨🏻‍💻.
+        Siempre supe que quería dedicarme a algo relacionado con la tecnología, aunque no fue hasta hace no mucho tiempo que decidí entrar en el mundo IT de la mano de la programación web, y bajo el Stack <span>MERN</span>. 👨🏻‍💻
         <br/>
-        Procuro que todos mis desarrollos sean únicos y que aporten algo distinto.
+        A pesar de esto, y a través de mis ganas de progresar y de avanzar, he seguido aprendiendo y buscando nuevos lenguajes y frameworks que conocer. (Redux, ThreeJS... y un largo etcétera de cursos en mi carrito de la compra). 📚
         <br/>
-        ¡Siempre Responsive! 📲 😏
+        Procuro que todos mis desarrollos sean únicos y que aporten algo distinto. Me apasiona el mundo del diseño y experiencia de usuario . Eso sí ¡Siempre Responsive! 📲 😏 
+        <br/>
+        Sin duda este no es el fin de mi aprendizaje dentro del mundo IT, me encanta, el branding dentro de las marcas, el diseño, el UX/UI, la automatización y ese mundo cada vez más en auge que son las criptomonedas. 🕹
         <br/>
         Desarrollo con Buenas Prácticas: <span>Clean Code, Pair Programming, TDD</span>
+        <br/>
         <br/>
         Mis herramientas ⚙️ <br/>
         - <span>Visual Studio Code, Git, GitHub, Notion</span>
