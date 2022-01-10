@@ -1,10 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import PrimaryButton from "../PrimaryButton";
-// Img
+// import PrimaryButton from "../PrimaryButton";
 import resume from "../../img/resume.jpg";
-import cv from '../../img/cv/CV-victor-manuel-morales-ruiz_compressed.pdf';
-
 
 function ImageSection() {
   // const year = new Date().getFullYear();
@@ -53,7 +50,13 @@ function ImageSection() {
             <p>: Español</p>
           </div> */}
         </div>
-        <PrimaryButton title="Descargar CV" type="submit" onclick={`${cv}`} />
+        <a
+          href="https://drive.google.com/file/d/1FceWVFptOxktAtBI8c_FLMNXc3BTvgEx/view?usp=sharing"
+          download="CV-Victor"
+          target='_blank'
+          rel="noreferrer"
+          >Descargar CV</a>
+        {/* <PrimaryButton title="Descargar CV" type="submit" /> */}
       </div>
     </ImageSectionStyled>
   );
@@ -62,8 +65,16 @@ function ImageSection() {
 const ImageSectionStyled = styled.div`
   margin-top: 5rem;
   display: flex;
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .left-content {
     width: 60%;
+    @media screen and (max-width: 600px) {
+      width: 100%;
+    }
     img {
       width: 95%;
       object-fit: cover;
@@ -97,7 +108,33 @@ const ImageSectionStyled = styled.div`
         }
       }
     }
+    a{
+    background-color: var(--primary-color);
+    padding: 0.8rem 2.5rem;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: inherit;
+    text-transform: uppercase;
+    position: relative;
+    transition: all .4s ease-in-out;
+    &::after{
+        content: "";
+        position: absolute;
+        width: 0%;
+        transition: all .4s ease-in-out;
+        left: 0;
+        bottom: 0;
+        opacity: 0.7;
+    }
+    &:hover::after{
+        width: 100%;
+        height: 0.2rem;
+        background-color: var(--white-color);
+        transition: all .4s ease-in-out;
+    }
   }
+
   @media screen and (max-width: 1200px) {
     flex-direction: column;
     align-items: center;
@@ -128,5 +165,7 @@ const ImageSectionStyled = styled.div`
       }
     }
   }
+}
 `;
+
 export default ImageSection;

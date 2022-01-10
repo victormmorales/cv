@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 function PrimaryButton({ title }) {
     return (
-        <PrimaryButtonStyled >
+        <PrimaryButtonStyled>
             { title }
         </PrimaryButtonStyled>
     )
