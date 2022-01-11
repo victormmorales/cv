@@ -32,33 +32,33 @@ const blogs = [
     textPrincipal:
       "Hoy quiero hablaros de librería SweetAlert2. Es una librería javascript que te permite crear ventanas emergentes con un diseño profesional y fácil de personalizar e implementar. Y lo mejor de todo es que es compatible con la mayoría de los navegadores web como: Edge, Chrome, Firefox, Safari, entre otros más. ✌🏻 muy sencilla de utilizar y que queda genial para mostrar alertas en tus proyectos❗️ Con un poquito de código consigues un resultado muy chulo. 😏",
     textSecundario:
-      "Ante estos problemas 🤯 en una aplicación React, decidí probar la nueva API Hooks para solucionarlos. ¡Con React Hooks, podemos suscribirnos a los cambios en el tamaño de la ventana gráfica y configurar la imagen de fondo adecuada en función del ancho de la pantalla! 🎉En mi aplicación React, elegí una imagen de fondo adaptada para pantallas de escritorio y otra adecuada para dispositivos móviles 📲, según este diseño.",
+      "Muy fácil de instalar, con el típico comando 'npm i sweetalert2'. Un reemplazo hermoso, receptivo, personalizable y accesible (WAI-ARIA)para los cuadros emergentes de JavaScript. No nesitas ningún tipo de dependencias.",
     textTerciario:
-      "Ten en cuenta que este es un componente funcional, ya que los Hooks no funcionan con componentes de clase. Las pantallas de menos de 650 px usarán la imagen adaptada para dispositivos móviles. Las pantallas más amplias utilizarán la imagen del escritorio. Aquí os dejo el código de ejemplo: 😏➡️",
+      "¿Te vas a atrever a utilizarla en algún proyecto? 😏  Seguro que sabiendo lo sencillo que es utilizarla estarás deseando probarla 😬",
     imageSecundaria: blog2_2,
     link: 'https://sweetalert2.github.io/'
   },
-  {
-    _id: "3",
-    title: "Blog3",
-    date: "27 de Diciembre",
-    imagePrincipal: blog3,
-    textPrincipal: "METER textPrincipalO",
-  },
-  {
-    _id: "4",
-    title: "Blog4",
-    date: "27 de Diciembre",
-    imagePrincipal: blog4,
-    textPrincipal: "METER textPrincipalO",
-  },
-  {
-    _id: "5",
-    title: "Blog5",
-    date: "27 de Diciembre",
-    imagePrincipal: blog5,
-    textPrincipal: "METER TEXTO",
-  },
+  // {
+  //   _id: "3",
+  //   title: "Blog3",
+  //   date: "27 de Diciembre",
+  //   imagePrincipal: blog3,
+  //   textPrincipal: "METER textPrincipalO",
+  // },
+  // {
+  //   _id: "4",
+  //   title: "Blog4",
+  //   date: "27 de Diciembre",
+  //   imagePrincipal: blog4,
+  //   textPrincipal: "METER textPrincipalO",
+  // },
+  // {
+  //   _id: "5",
+  //   title: "Blog5",
+  //   date: "27 de Diciembre",
+  //   imagePrincipal: blog5,
+  //   textPrincipal: "METER TEXTO",
+  // },
 ];
 
 export default blogs;
