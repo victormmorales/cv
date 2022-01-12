@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from 'uuid';
 //Blog 1:
 import blog1_1 from "../img/blogs/blog1-1.png";
 import blog1_2 from "../img/blogs/blog1-2.png";
@@ -11,7 +12,7 @@ import blog5 from "../img/blogs/blog5.svg";
 
 const blogs = [
   {
-    _id: "1",
+    _id: uuidv4(),
     title: "Imágenes responsive en ReactJS",
     date: "27 de Diciembre",
     imagePrincipal: blog1_1,
@@ -25,7 +26,7 @@ const blogs = [
     link: 'https://itnext.io/responsive-background-images-using-react-hooks-941af365ea1f'
   },
   {
-    _id: "2",
+    _id: uuidv4(),
     title: "SweetAlert2",
     date: "29 de Diciembre",
     imagePrincipal: blog2_1,
