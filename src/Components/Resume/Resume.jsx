@@ -21,7 +21,7 @@ import CriptanLogo from "../../img/logos/criptan.png";
 function Resume() {
   return (
     <ResumeStyled>
-      <Title title="Currículum" span="Currículum" />
+      <Title title="Curriculum" span="Curriculum" />
       <InnerLayout>
         {/* Experiencia laboral */}
         <div className="small-title">
